@@ -1,0 +1,42 @@
+/* Colors: Navy: #013852, Orange: #F27523....Font: Roboto 500, 400, 300 */
+
+/* GENERAL */
+
+.container {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(90deg, #1976D2, #BBDEFB);
+}
+.small-logo {
+  height: 50px;
+}
+.large-logo {
+  height: 200px;
+}
+
+/* HEADER */
+
+.header {
+  height: 70px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  border: 1px solid pink;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav .small-logo {
+  margin-left: auto;
+}
