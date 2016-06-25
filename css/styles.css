@@ -14,16 +14,71 @@ body {
   width: 90%;
   margin: 0 auto;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 33.3%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.col-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.col-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 66.667%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.centered {
+  /*margin: 0 auto;*/
+  text-align: center;
+}
 .small-logo {
   height: 50px;
 }
 .large-logo {
   height: 15rem;
 }
-
+.center-dark {
+  text-align: center;
+  color: #212121;
+  padding: 1rem;
+}
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
 h2 {
   font-size: 3.5rem;
   text-transform: uppercase;
+}
+h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+h4 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 /* HEADER */
@@ -67,7 +122,6 @@ h2 {
 .balloon-section {
   padding: 10rem 0;
 }
-
 .balloon-figure {
   width: 80%;
   margin: 0 auto;
@@ -75,6 +129,10 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: 1s;
+}
+.balloon-float {
+  transform: translate(20px, 20px);
 }
 .balloon-img {
   width: 70%;
@@ -114,14 +172,12 @@ h2 {
 /* BUSINESS LEADERS */
 
 .business-section {
-  height: 100vh;
   font-weight: 500;
   background-image: url("../img/biz-leaders.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 10rem 0;
-  overflow: hidden;
 }
 .biz-leaders {
   display: flex;
@@ -130,4 +186,45 @@ h2 {
   justify-content: center;
   text-align: center;
   color: #F27523;
+}
+
+/* CHART SECTION */
+
+.chart-section {
+  background-color: #013852;
+  padding: 10rem 0;
+  color: white;
+  text-align: center;
+}
+.why-content {
+  color: white;
+  text-align: left;
+}
+.chart {
+  box-shadow: 3px 3px 6px #212121;
+  width: 100%;
+  border-radius: 8px;
+  opacity: .7;
+}
+
+/* BRIDGE SECTION */
+
+.bridge-section {
+  padding: 10rem 0;
+}
+.bridge-background {
+  position: relative;
+  margin-top: -8rem;
+}
+.no-bridge {
+  position: absolute;
+  top: 10rem;
+  width: 100%;
+  left: 0;
+}
+.only-bridge {
+  position: absolute;
+  top: 10rem;
+  width: 100%;
+  left: 0;
 }
