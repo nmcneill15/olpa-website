@@ -80,6 +80,13 @@ h4 {
   font-size: 2rem;
   font-weight: 300;
 }
+.hidden {
+  opacity: 0;
+}
+.fade-in {
+  opacity: 1;
+  transform: translate(0, -10rem);
+}
 
 /* HEADER */
 
@@ -120,7 +127,7 @@ h4 {
 /* BALLOON SECTION */
 
 .balloon-section {
-  padding: 10rem 0;
+  padding: 10rem 0 10rem 0;
 }
 .balloon-figure {
   width: 80%;
@@ -129,10 +136,11 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: 1s;
+  transform: translate(0, 30rem);
+  transition: 5s;
 }
 .balloon-float {
-  transform: translate(20px, 20px);
+  transform: translate(0, -30rem);
 }
 .balloon-img {
   width: 70%;
@@ -162,10 +170,16 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  border: 1px solid pink;
 }
 .tree-content {
   text-align: center;
   color: white;
+
+}
+.tree-content h2 {
+  padding: 10rem 0;
+  transition: 2s;
 }
 
 
