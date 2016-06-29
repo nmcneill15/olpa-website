@@ -1,6 +1,6 @@
 $(function() {
   $("#balloon-figure").addClass("balloon-float");
-  var sectionIds = ["#way-up", "#sometimes-requires", "#digging-deep", "#biz-leaders", "#hard-questions", "#hard-data", "#real-solutions"];
+  var sectionIds = ["#way-up", "#sometimes-requires", "#digging-deep", "#biz-leaders", "#dedicated-to", "#hard-questions", "#hard-data", "#real-solutions", "#hard-question-header", "#chart-div", "#why-content", "#bridge-content", "#only-bridge"];
   $(window).scroll(fadeInContent);
 
   function fadeInContent() {
@@ -12,7 +12,7 @@ $(function() {
       console.log("winTop " + winTop);
       if (winTop > sectionPosition) {
         console.log("made it");
-        $(section).attr("class", "fade-in");
+        $(section).addClass("fade-in");
       }
     });
   }

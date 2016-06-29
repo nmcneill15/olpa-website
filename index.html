@@ -57,33 +57,33 @@
   <section id="business-section" class="business-section" >
 
 
-    <div class="container"><!-- CONTAINER DIV -->
+    <div class="container" ><!-- CONTAINER DIV -->
 
-      <div id="biz-leaders" class="biz-leaders">
+      <div id="biz-leaders" class="biz-leaders hidden">
         <img src="img/olpa-logo.png" class="large-logo" />
-        <h2>An Alliance of MS</h2>
+        <h2 >An Alliance of MS</h2>
         <h2>Business Leaders</h2>
       </div>
 
-      <h2 class="center-dark" >Dedicated to</h2>
+      <h2 id="dedicated-to" class="center-dark hidden" >Dedicated to</h2>
 
       <div class="three-points row">
 
-        <div class="hard-questions col-4">
+        <div id="hard-questions" class="hard-questions col-4 hidden">
           <h3>Answering</h3>
           <img src="img/hard-questions.png" />
           <h1>Hard</h1>
           <h2>Questions</h2>
         </div>
 
-        <div class="hard-data col-4">
+        <div id="hard-data" class="hard-data col-4 hidden">
           <h3>With</h3>
           <img src="img/hard-data.png" />
           <h1>Hard</h1>
           <h2>Data</h2>
         </div>
 
-        <div class="real-solutions col-4">
+        <div id="real-solutions" class="real-solutions col-4 hidden">
           <h3>To Form</h3>
           <img src="img/real-solutions.png" />
           <h1>Real</h1>
@@ -98,15 +98,15 @@
   <section id="chart-section" class="chart-section">
     <div class="container">
 
-      <h2>The Hard Question:</h2>
+      <h2 id="hard-question-header" class="hidden" >The Hard Question:</h2>
 
       <div class="row">
 
-        <div class="col-6">
+        <div id="chart-div" class="col-6 hidden">
           <img id="chart" class="chart" src="img/chart.png" />
         </div>
 
-        <div class="why-content col-6">
+        <div id="why-content" class="why-content col-6 hidden">
           <h4>Why has Mississippi Been in</h4>
           <h1>Last Place</h1>
           <h4>Since 1929...Except for 2 years?</h4>
@@ -121,7 +121,7 @@
     <div class="container" ><!-- CONTAINER DIV -->
 
       <div class="row">
-        <div class="col-8 centered">
+        <div id="bridge-content" class="col-8 centered hidden">
           <h2>The Hard Data</h2>
           <h3>To Get Out of Last Place</h3>
           <h2>Mississippi Needs</h2>
@@ -130,11 +130,23 @@
       </div>
 
     </div><!-- CLOSE OF CONTAINER DIV -->
-    <div class="bridge-background">
-      <img class="only-bridge" src="img/only-bridge.png" />
+    <div class="bridge-background" >
+      <img id="only-bridge" class="only-bridge hidden" src="img/only-bridge.png" />
       <img class="no-bridge" src="img/no-bridge.png" />
     </div>
   </section>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+
+      <div class="row footer-content" >
+        <h3 id="to-top-link" class="light-link">To Top</h3>
+        <h3 id="dig-deeper" class="light-link">Dig Deeper</h3>
+        <img id="to-top-balloon" class="to-top-balloon" src="img/balloon.png" />
+      </div>
+
+    </div>
+  </footer>
 
 
 

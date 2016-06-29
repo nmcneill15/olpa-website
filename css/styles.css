@@ -1,4 +1,4 @@
-/* Colors: Navy: #013852, Orange: #F27523....Font: Roboto 500, 400, 300 */
+/* Colors: Navy: #013852 or #022B44, Orange: #F27523....Font: Roboto 500, 400, 300 */
 
 /* GENERAL */
 
@@ -28,6 +28,7 @@ body {
   width: 33.3%;
   padding: 0 1rem;
   box-sizing: border-box;
+  transition: 1s;
 }
 .col-6 {
   display: flex;
@@ -37,6 +38,7 @@ body {
   width: 50%;
   padding: 0 1rem;
   box-sizing: border-box;
+  transition: 1s;
 }
 .col-8 {
   display: flex;
@@ -46,6 +48,7 @@ body {
   width: 66.667%;
   padding: 0 1rem;
   box-sizing: border-box;
+  transition: 1s;
 }
 .centered {
   /*margin: 0 auto;*/
@@ -61,6 +64,7 @@ body {
   text-align: center;
   color: #212121;
   padding: 1rem;
+  transition: 1s;
 }
 h1 {
   font-size: 5rem;
@@ -71,8 +75,8 @@ h2 {
   text-transform: uppercase;
 }
 h3 {
-  font-size: 2.5rem;
   text-transform: uppercase;
+  font-size: 2.5rem;
   font-weight: 300;
 }
 h4 {
@@ -81,11 +85,13 @@ h4 {
   font-weight: 300;
 }
 .hidden {
+  transform: translate(0, 10rem);
   opacity: 0;
+  transition: 1s;
 }
 .fade-in {
   opacity: 1;
-  transform: translate(0, -10rem);
+  transform: translate(0, 0);
 }
 
 /* HEADER */
@@ -170,7 +176,6 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  border: 1px solid pink;
 }
 .tree-content {
   text-align: center;
@@ -200,6 +205,7 @@ h4 {
   justify-content: center;
   text-align: center;
   color: #F27523;
+  transition: 1s;
 }
 
 /* CHART SECTION */
@@ -224,21 +230,43 @@ h4 {
 /* BRIDGE SECTION */
 
 .bridge-section {
-  padding: 10rem 0;
+  padding: 10rem 0 0 0;
+  margin: 0;
 }
 .bridge-background {
   position: relative;
   margin-top: -8rem;
+  padding: 0;
+  box-sizing: border-box;
 }
 .no-bridge {
-  position: absolute;
-  top: 10rem;
+  display: block;
   width: 100%;
-  left: 0;
+  opacity: .99;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .only-bridge {
   position: absolute;
-  top: 10rem;
+  top: 0;
   width: 100%;
   left: 0;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 4rem 0;
+  margin: 0;
+  background-color: #022B44;
+  color: white;
+}
+
+.to-top-balloon {
+  width: 10%;
+  position: absolute;
+  top: 0;
+  left: 45%;
+  margin-top: 400rem;
 }
