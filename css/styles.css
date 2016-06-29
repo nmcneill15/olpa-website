@@ -12,6 +12,7 @@ body {
 .container {
   display: block;
   width: 90%;
+  height: 100%;
   margin: 0 auto;
 }
 .row {
@@ -87,12 +88,22 @@ h4 {
 .hidden {
   transform: translate(0, 10rem);
   opacity: 0;
+  height: 0;
   transition: 1s;
 }
 .fade-in {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  height: auto;
   opacity: 1;
   transform: translate(0, 0);
 }
+.fade-out {
+  top: 0;
+  opacity: 0;
+}
+
 
 /* HEADER */
 
@@ -176,15 +187,10 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-}
-.tree-content {
-  text-align: center;
   color: white;
-
 }
-.tree-content h2 {
-  padding: 10rem 0;
-  transition: 2s;
+.tree-spacer {
+  padding: 15rem 0;
 }
 
 
@@ -261,12 +267,21 @@ h4 {
   margin: 0;
   background-color: #022B44;
   color: white;
+  text-align: center;
 }
-
 .to-top-balloon {
   width: 10%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 45%;
-  margin-top: 400rem;
+  margin-top: 40rem;
+}
+.light-link {
+  color: white;
+  transition: .4s;
+  font-weight: 500;
+}
+.light-link:hover {
+  cursor: pointer;
+  color: #F27523;
 }
