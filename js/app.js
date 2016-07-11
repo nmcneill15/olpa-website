@@ -1,6 +1,5 @@
 $(function() {
 
-  $("#balloon-figure").addClass("balloon-float");
 
   var invisible = [".tree-spacer"];
   $.each(invisible, function(i, element) {
