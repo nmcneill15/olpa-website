@@ -4,10 +4,10 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-image: url("../img/clouds.png"), linear-gradient(180deg, #1976D2, #BBDEFB);
+  background: linear-gradient(180deg, #1976D2, #64B5F6);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 .container {
   display: block;
@@ -132,6 +132,23 @@ h4 {
 
 .balloon-section {
   padding: 10rem 0 10rem 0;
+}
+.parallax {
+  perspective: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.clouds-layer {
+  transform: translateZ(-200px) scale(3);
+  z-index: -1;
 }
 .balloon-figure {
   width: 80%;
