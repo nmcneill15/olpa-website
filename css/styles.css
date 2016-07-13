@@ -4,8 +4,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(180deg, #1976D2, #64B5F6);
+  background-image: url("../img/clouds.png"), linear-gradient(180deg, #1976D2, #64B5F6);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-attachment: scroll;
 }
@@ -53,7 +54,7 @@ body {
 }
 
 .small-logo {
-  height: 50px;
+  height: 60px;
 }
 .large-logo {
   height: 15rem;
@@ -95,13 +96,15 @@ h4 {
 /* HEADER */
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 70px;
   background-color: transparent;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: fixed;
   width: 100%;
   z-index: 99;
 }
@@ -112,10 +115,10 @@ h4 {
   justify-content: flex-end;
 }
 .nav a {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #212121;
   text-decoration: none;
-  padding: .5rem 1rem;
+  padding: .6rem 1rem;
   transition: .4s;
 }
 .nav a:hover {
@@ -133,23 +136,7 @@ h4 {
 .balloon-section {
   padding: 10rem 0 10rem 0;
 }
-.parallax {
-  perspective: 100px;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallax-layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
 
-.clouds-layer {
-  transform: translateZ(-200px) scale(3);
-  z-index: -1;
-}
 .balloon-figure {
   width: 80%;
   margin: 0 auto 0 auto;
@@ -238,7 +225,6 @@ h4 {
 /* CHART SECTION */
 
 .chart-section {
-  background-color: #013852;
   padding: 10rem 0;
   color: white;
   text-align: center;
@@ -254,7 +240,6 @@ h4 {
   box-shadow: 3px 3px 6px #212121;
   width: 100%;
   border-radius: 8px;
-  opacity: .7;
 }
 
 /* BRIDGE SECTION */
@@ -262,6 +247,7 @@ h4 {
 .bridge-section {
   padding: 10rem 0 0 0;
   margin: 0;
+  color: white;
 }
 .bridge-background {
   position: relative;
