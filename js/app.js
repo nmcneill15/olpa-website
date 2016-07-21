@@ -1,31 +1,31 @@
 $(function() {
 
 
-  var invisible = [".tree-spacer"];
-  $.each(invisible, function(i, element) {
-    $(element).hide();
-  });
+  $(".hidden").css("opacity", 0);
 
-  var sectionIds = ["#way-up", "#sometimes-requires", "#digging-deep", "#biz-leaders", "#three-points", "#chart-div", "#bridge-content"];
+  var sectionIds = ["#way-up", "#sometimes-requires", "#digging-deep", "#biz-leaders", "#three-points", "#chart-div", "#bridge-content", "#only-bridge"];
   $(window).scroll(fadeInContent);
 
   $("#to-top-link").on("click", toTop);
 
-  // function fadeInContent() {
-  //   var winTop = $(window).scrollTop();
-  //   $.each(sectionIds, function(i, section) {
-  //     var sectionTop = $(section).offset().top;
-  //     var sectionBottom = sectionTop + $(section).outerHeight();
-  //     var prevSectionIndex = sectionIds.indexOf(section) - 1;
-  //
-  //     if (winTop > sectionTop - 500 && winTop < sectionTop - 450) {
-  //       $(section).addClass("showing");
-  //       if (prevSectionIndex !== -1) {
-  //         $(sectionIds[prevSectionIndex]).removeClass("showing");
-  //       }
-  //     }
-  //   });
-  // }
+
+  function fadeInContent() {
+    var winTop = $(window).scrollTop();
+    $.each(sectionIds, function(i, section) {
+      var sectionTop = $(section).offset().top;
+      var previousSection = sectionIds[sectionIds.indexOf(section) - 1];
+      var showing = $(section).hasClass("showing");
+      if (winTop > sectionTop - 400 && !showing) {
+        // if (previousSection !== -1) {
+        //   $(previousSection).animate( { top: "-=100px"}, 800);
+        // }
+        // if (section === "#bridge") {
+        //   $(section).addClass("showing").animate( { opacity: 1, left: "-="})
+        // }
+        $(section).addClass("showing").animate( { opacity: 1, top: "-=100px"}, 800);
+      }
+    });
+  }
 
   function toTop() {
     var top = $("#balloon-section").offset().top;
