@@ -2,6 +2,7 @@
 
 /* GENERAL */
 
+
 body {
   font-family: "Roboto", sans-serif;
   background-image: url("../img/clouds.png"), linear-gradient(180deg, #1976D2, #64B5F6);
@@ -284,6 +285,19 @@ h4 {
   width: 100%;
   left: 0;
 }
+.real-solutions-link {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #013852;
+  bottom: 20rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.real-solutions-link:hover {
+  color: #F27523;
+  cursor: pointer;
+}
 
 /* FOOTER */
 
@@ -294,19 +308,24 @@ h4 {
   color: white;
   text-align: center;
 }
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.to-top-link {
+  margin-left: auto;
+  transition: .4s;
+}
+.to-top-link:hover {
+  color: #F27523;
+  cursor: pointer;
+}
 .to-top-balloon {
   width: 10%;
   position: fixed;
   top: 0;
   left: 45%;
   margin-top: 40rem;
-}
-.light-link {
-  color: white;
-  transition: .4s;
-  font-weight: 500;
-}
-.light-link:hover {
-  cursor: pointer;
-  color: #F27523;
 }

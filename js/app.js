@@ -17,7 +17,7 @@ $(function() {
       var sectionTop = $(section).offset().top;
       var previousSection = sectionIds[sectionIds.indexOf(section) - 1];
       var showing = $(section).hasClass("showing");
-      if (winTop > sectionTop - 600 && !showing) {
+      if (winTop > sectionTop - 700 && !showing) {
         // if (previousSection !== -1) {
         //   $(previousSection).animate( { top: "-=100px"}, 800);
         // }
@@ -34,7 +34,10 @@ $(function() {
     $("#to-top-balloon").animate({ marginTop: -200}, 3000, function() {
       $(this).css("margin-top", "40rem");
     });
-    $("body").animate( { scrollTop: top }, 3000, "easeInOutQuint");
+    $("#balloon-figure").css("opacity", 0);
+    $("body").animate( { scrollTop: top }, 3000, "easeInOutQuint", function() {
+      location.reload();
+    });
   }
 
 });
