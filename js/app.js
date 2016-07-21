@@ -1,5 +1,7 @@
 $(function() {
 
+  $("#balloon-figure").animate( {top: "-=80rem"}, 4000);
+
 
   $(".hidden").css("opacity", 0);
 
@@ -15,14 +17,14 @@ $(function() {
       var sectionTop = $(section).offset().top;
       var previousSection = sectionIds[sectionIds.indexOf(section) - 1];
       var showing = $(section).hasClass("showing");
-      if (winTop > sectionTop - 400 && !showing) {
+      if (winTop > sectionTop - 600 && !showing) {
         // if (previousSection !== -1) {
         //   $(previousSection).animate( { top: "-=100px"}, 800);
         // }
         // if (section === "#bridge") {
         //   $(section).addClass("showing").animate( { opacity: 1, left: "-="})
         // }
-        $(section).addClass("showing").animate( { opacity: 1, top: "-=100px"}, 800);
+        $(section).addClass("showing").animate( { opacity: 1, top: "-=10rem"}, 800);
       }
     });
   }

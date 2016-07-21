@@ -136,6 +136,8 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 40rem;
 }
 
 .balloon-img {
@@ -202,7 +204,7 @@ h4 {
   text-align: center;
   color: #013852;
   position: relative;
-  top: 100px;
+  top: 10rem;
 }
 .biz-text {
   position: relative;
@@ -210,7 +212,7 @@ h4 {
 .three-points {
   padding-top: 3rem;
   position: relative;
-  top: 100px;
+  top: 10rem;
 }
 .hr {
   border: 1px solid lightgrey;
@@ -239,7 +241,7 @@ h4 {
 .chart-div {
   padding-top: 5rem;
   position: relative;
-  top: 100px;
+  top: 10rem;
 }
 .why-content {
   color: white;
@@ -266,7 +268,7 @@ h4 {
 }
 .bridge-content {
   position: relative;
-  top: 100px;
+  top: 10rem;
 }
 .no-bridge {
   display: block;
@@ -278,7 +280,7 @@ h4 {
 }
 .only-bridge {
   position: absolute;
-  top: 100px;
+  top: 10rem;
   width: 100%;
   left: 0;
 }
