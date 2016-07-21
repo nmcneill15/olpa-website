@@ -1,9 +1,11 @@
 $(function() {
 
-  $("#balloon-figure").animate( {top: "-=80rem"}, 4000);
+  $("body").on("load", function() {
+    $("#balloon-figure").animate( {top: "-=80rem"}, 4000);
+    $(".hidden").css("opacity", 0);
+  });
 
 
-  $(".hidden").css("opacity", 0);
 
   var sectionIds = ["#way-up", "#sometimes-requires", "#digging-deep", "#biz-leaders", "#three-points", "#chart-div", "#bridge-content", "#only-bridge"];
   $(window).scroll(fadeInContent);
