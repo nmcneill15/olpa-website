@@ -8,6 +8,7 @@
   <link rel="stylesheet", type="text/css" href="css/reset.css" />
   <link rel="stylesheet", type="text/css" href="css/styles.css" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Zeyada" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -50,9 +51,11 @@
 
   <section id="tree-section" class="tree-section">
 
-      <h2 id="way-up" class="tree-text" >But the way Up<br />Sometimes Requires</h2>
-      <h2 id="sometimes-requires" class="tree-text" >Sometimes<br />Requires</h2>
-      <h2 id="digging-deep" class="tree-text" >Digging Deep</h2>
+      <div class="way-up tree-text">
+        <h2>But the way Up</h2>
+        <h3>Sometimes Requires</h3>
+      </div>
+      <h2 id="digging-deep" class="digging-deep tree-text" >Digging Deep</h2>
 
     <img class="tree-image" src="img/tree.png" />
   </section>
@@ -61,50 +64,61 @@
 
   <section id="business-section" class="business-section" >
 
-      <div id="biz-leaders" class="biz-leaders">
+      <div class="biz-leaders">
         <img id="large-logo" src="img/logo.png" class="large-logo" />
-        <divclass="biz-text">
-          <h2>An Alliance of</h2>
-          <h2>Mississippi</h2>
-          <h2>Business Leaders</h2>
-        </div>
       </div>
+
 
       <hr class="hr" />
 
-      <h2 class="center-dark" >Dedicated to</h2>
-
-      <div id="three-points" class="three-points row">
-
-        <div id="hard-questions" class="hard-questions col-4">
-          <h3>Answering</h3>
-          <img src="img/hard-questions.png" />
-          <h1>Hard</h1>
-          <h3>Questions</h3>
+      <div class="biz-leaders">
+        <div class="biz-text">
+          <h2>An Alliance of</h2>
+          <h1>Mississippi</h1>
+          <h3>Business Leaders</h3>
         </div>
-
-        <div id="hard-data" class="hard-data col-4">
-          <h3>Wit<span class="last-letter">h</span></h3>
-          <img src="img/hard-data.png" />
-          <h1>Hard</h1>
-          <h3>Dat<span class="last-letter">a</span></h3>
-        </div>
-
-        <div id="real-solutions" class="real-solutions col-4">
-          <h3>To For<span class="last-letter">m</span></h3>
-          <img src="img/real-solutions.png" />
-          <h1>Rea<span class="last-letter">l</span></h1>
-          <h3>Solutions</h3>
-        </div>
-
       </div>
+
+
+      <hr class="hr" />
+
+
+      <div class="biz-leaders">
+        <h2 class="center-dark" >Dedicated to</h2>
+
+        <div id="three-points" class="three-points row">
+
+          <div id="hard-questions" class="hard-questions col-4">
+            <h3>Answering</h3>
+            <img src="img/hard-questions.png" />
+            <h1>Hard</h1>
+            <h3>Questions</h3>
+          </div>
+
+          <div id="hard-data" class="hard-data col-4">
+            <h3>Wit<span class="last-letter">h</span></h3>
+            <img src="img/hard-data.png" />
+            <h1>Hard</h1>
+            <h3>Dat<span class="last-letter">a</span></h3>
+          </div>
+
+          <div id="real-solutions" class="real-solutions col-4">
+            <h3>To For<span class="last-letter">m</span></h3>
+            <img src="img/real-solutions.png" />
+            <h1>Rea<span class="last-letter">l</span></h1>
+            <h3>Solutions</h3>
+          </div>
+
+        </div>
+      </div>
+
 
   </section>
 
   <section id="chart-section" class="chart-section">
     <div class="container">
 
-      <h2>The Hard Question:</h2>
+      <h1 class="hard-question-heading">The Hard Question:</h1>
 
       <div id="chart-div" class="chart-div row">
 
@@ -115,7 +129,7 @@
         <div class="why-content col-6">
           <h4>Why has Mississippi Been in</h4>
           <h1>Last Place</h1>
-          <h4>Since 1929...Except for 2 years?</h4>
+          <h5>Since 1929...Except for 2 years?</h5>
         </div>
 
       </div>
@@ -126,11 +140,12 @@
   <section id="bridge-section" class="bridge-section" >
     <div class="container" ><!-- CONTAINER DIV -->
 
+      <h1 class="hard-data-heading">The Hard Data:</h1>
+
       <div class="row">
         <div id="bridge-content" class="bridge-content col-10 centered">
-          <h2>The Hard Data:</h2>
-          <h3>To Get Out of Last Place</h3>
-          <h2>Mississippi Needs A</h2>
+          <h4>To Get Out of Last Place</h4>
+          <h4>Mississippi Needs A</h4>
           <h2>$4.8M Economic Bridge</h2>
         </div>
       </div>
@@ -143,7 +158,7 @@
 
   </section>
 
-  <section id="balloon-section-2" class="balloon-section">
+  <section id="balloon-section-2" class="balloon-section balloon-section-2">
 
 
     <div class="container" >
@@ -151,26 +166,25 @@
       <div id="balloon-figure-2" class="balloon-figure" ><!-- COMBINATION OF BALLOON, LINES, AND HEADING TEXT -->
         <img id="balloon-img-2" class="balloon-img" src="img/ms-balloon.png" />
 
-        <h1 id="lift-heading-2">Find Out More About</h1>
-        <h1 id="olp-heading-2">Real Solutions</h1>
+        <h1>Find Out More About</h1>
+        <h1 class="real-solutions-heading">Real Solutions</h1>
 
       </div><!-- CLOSE OF BALLOON IMAGE DIV -->
 
     </div><!-- CLOSE OF CONTAINER DIV -->
   </section>
 
-
-
-  <!-- <footer id="footer" class="footer">
+  <footer id="footer" class="footer">
     <div class="container">
 
       <div class="footer-content" >
+        <p>&copy; 2016 OLPA</p>
 
 
       </div>
 
     </div>
-  </footer> -->
+  </footer>
 
   <!-- <script src="https://
 
