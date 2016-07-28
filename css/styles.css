@@ -103,6 +103,23 @@ h5 {
   text-transform: uppercase;
   font-size: 1.6rem;
 }
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+}
 /* HEADER */
 
 .header {
@@ -158,6 +175,13 @@ h5 {
   animation-name: balloon-rise;
   animation-duration: 3s;
   position: relative;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 600px) {
+  .balloon-figure {
+    width: 100%;
+  }
 }
 @keyframes balloon-rise {
   from { top: 200px; }
@@ -168,9 +192,7 @@ h5 {
   width: 45%;
 }
 .balloon-figure h1 {
-  font-family: "Century Gothic", sans-serif;
   color: white;
-  font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   font-weight: 300;
@@ -178,7 +200,6 @@ h5 {
 }
 .balloon-figure h1:last-of-type {
   font-weight: bold;
-  font-size: 4.4rem;
   margin-top: -1rem;
 }
 .balloon-figure h1:first-of-type {
@@ -219,11 +240,9 @@ h5 {
   font-weight: bold;
 }
 .way-up h3 {
-  font-size: 2rem;
   letter-spacing: .3rem;
 }
 .digging-deep {
-  font-size: 5rem;
   font-weight: 700;
   top: 80%;
   color: #66A031;
