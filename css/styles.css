@@ -20,7 +20,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 .container {
   display: block;
@@ -155,6 +155,13 @@ h5 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation-name: balloon-rise;
+  animation-duration: 3s;
+  position: relative;
+}
+@keyframes balloon-rise {
+  from { top: 200px; }
+  to { top: 0; }
 }
 
 .balloon-img {
