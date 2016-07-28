@@ -1,15 +1,26 @@
 /* Colors: Navy: #013852 or #022B44, Orange: #F27523....Font: Roboto 500, 400, 300 */
 
 /* GENERAL */
+html, body {
+  overflow-x: hidden;
+}
 
+html {
+  background: linear-gradient(180deg, #1976D2, #64B5F6);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
-  background-image: url("../img/clouds.png"), linear-gradient(180deg, #1976D2, #64B5F6);
+  background-image: url("../img/clouds.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 .container {
   display: block;
@@ -59,7 +70,6 @@ body {
 }
 .large-logo {
   height: 15rem;
-  position: relative;
 }
 .center-dark {
   text-align: center;
@@ -89,9 +99,6 @@ h4 {
 /* HEADER */
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 70px;
   background-color: transparent;
   display: flex;
@@ -137,8 +144,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: 40rem;
 }
 
 .balloon-img {
@@ -176,15 +181,15 @@ h4 {
 }
 .tree-text {
   position: absolute;
-  top: 51%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, 0);
 }
 .tree-text:first-child {
-  top: 3%;
+  top: 8%;
 }
 .tree-text:last-of-type {
-  top: 92%;
+  top: 80%;
 }
 
 /* BUSINESS LEADERS */
@@ -204,16 +209,10 @@ h4 {
   justify-content: center;
   text-align: center;
   color: #013852;
-  position: relative;
-  top: 10rem;
 }
-.biz-text {
-  position: relative;
-}
+
 .three-points {
   padding-top: 3rem;
-  position: relative;
-  top: 10rem;
 }
 .hr {
   border: 1px solid lightgrey;
@@ -241,8 +240,6 @@ h4 {
 }
 .chart-div {
   padding-top: 5rem;
-  position: relative;
-  top: 10rem;
 }
 .why-content {
   color: white;
@@ -267,10 +264,6 @@ h4 {
   padding: 0;
   box-sizing: border-box;
 }
-.bridge-content {
-  position: relative;
-  top: 10rem;
-}
 .no-bridge {
   display: block;
   width: 100%;
@@ -281,7 +274,7 @@ h4 {
 }
 .only-bridge {
   position: absolute;
-  top: 10rem;
+  top: 0;
   width: 100%;
   left: 0;
 }
