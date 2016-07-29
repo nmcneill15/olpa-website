@@ -33,6 +33,7 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .col-4 {
   display: flex;
@@ -44,6 +45,7 @@ body {
   box-sizing: border-box;
   transition: 1s;
 }
+
 .col-6 {
   display: flex;
   flex-direction: column;
@@ -53,6 +55,20 @@ body {
   padding: 0 1rem;
   box-sizing: border-box;
   transition: 1s;
+}
+@media (max-width: 600px) {
+  .col-4 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  .col-6 {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
+  }
 }
 .col-10 {
   display: flex;
@@ -73,6 +89,12 @@ body {
 }
 .large-logo {
   height: 15rem;
+}
+@media (max-width: 600px) {
+  .large-logo {
+    height: auto;
+    width: 95%;
+  }
 }
 .center-dark {
   text-align: center;
@@ -111,13 +133,13 @@ h5 {
     font-size: 1.4rem;
   }
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
   h4 {
-    font-size: 1.4rem;
+    font-size: .8rem;
   }
   h5 {
-    font-size: 1rem;
+    font-size: .6rem;
   }
 }
 /* HEADER */
@@ -145,7 +167,7 @@ h5 {
   text-decoration: none;
   padding: .4rem 1rem;
   text-transform: uppercase;
-  transition: .4s;
+  transition: .2s;
 }
 .nav a:hover {
   color: #F27523;
@@ -197,18 +219,22 @@ h5 {
   text-transform: uppercase;
   font-weight: 300;
   text-shadow: 2px 2px 4px #1976D2;
-}
-.balloon-figure h1:last-of-type {
   font-weight: bold;
   margin-top: -1rem;
 }
-.balloon-figure h1:first-of-type {
+.balloon-figure h2 {
+  text-shadow: 2px 2px 4px #1976D2;
   letter-spacing: .1rem;
-  margin-top: -0.7rem;
+  margin-top: -1rem;
 }
-.balloon-section h3 {
+.balloon-figure h3 {
   color: white;
   text-shadow: 2px 2px 4px #1976D2;
+}
+@media (max-width: 600px) {
+  .balloon-figure h1, .balloon-figure h2 {
+    margin-top: 0;
+  }
 }
 /* TREE SECTION */
 
@@ -239,7 +265,7 @@ h5 {
 .way-up h2 {
   font-weight: bold;
 }
-.way-up h3 {
+.way-up h4 {
   letter-spacing: .3rem;
 }
 .digging-deep {
@@ -293,6 +319,7 @@ h5 {
 .hard-data h3 {
   letter-spacing: 2.2rem;
 }
+
 .real-solutions h1 {
   letter-spacing: .5rem;
 }
@@ -315,12 +342,18 @@ h5 {
   text-shadow: 3px 3px 6px #1976D2;
 }
 .chart-div {
+  flex-wrap: wrap-reverse;
   padding-top: 5rem;
 }
 .why-content {
   color: white;
   text-align: left;
   text-shadow: 3px 3px 6px #1976D2;
+}
+@media (max-width: 600px) {
+  .why-content {
+    text-align: center;
+  }
 }
 .chart {
   box-shadow: 3px 3px 6px #1976D2;
@@ -353,6 +386,14 @@ h5 {
   letter-spacing: 1.3rem;
   color: #013852;
 }
+@media (max-width: 600px) {
+  .bridge-content h4:first-of-type {
+    letter-spacing: normal;
+  }
+  .bridge-content h4:last-of-type {
+    letter-spacing: normal;
+  }
+}
 .bridge-content h2 {
   font-weight: bold;
 }
@@ -362,6 +403,11 @@ h5 {
   margin-top: -6rem;
   padding: 0;
   box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .bridge-background {
+    margin-top: 0;
+  }
 }
 .no-bridge {
   display: block;
