@@ -28,6 +28,11 @@ body {
   height: 100%;
   margin: 0 auto;
 }
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
 .row {
   display: flex;
   flex-direction: row;
@@ -83,9 +88,10 @@ body {
 
 .small-logo {
   height: 60px;
-  padding: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   margin: 0;
-  vertical-align: text-bottom;
 }
 .large-logo {
   height: 15rem;
@@ -142,6 +148,20 @@ h5 {
     font-size: .6rem;
   }
 }
+@media (min-width: 2000px) {
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 3.2rem;
+  }
+}
 
 /* LOADER */
 
@@ -181,13 +201,14 @@ h5 {
   z-index: 98;
 }
 .nav {
+  float: right;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   height: 100%;
 }
-.nav a {
+.nav-link {
   font-size: 1rem;
   color: white;
   text-decoration: none;
@@ -195,16 +216,59 @@ h5 {
   text-transform: uppercase;
   transition: .2s;
 }
-.nav a:hover {
+.nav-link:hover {
   color: #F27523;
 }
-.nav a:last-child {
+.nav-link:last-child {
   padding: .4rem 0 .4rem 1rem;
 }
-.nav a:first-child {
-  margin-right: auto;
-  padding: 0;
-  display: block;
+
+.menu {
+  position: absolute;
+  top: .8rem;
+  right: .8rem;
+  color: white;
+  display: none;
+}
+.menu:hover {
+  color: #F27523;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+  .header {
+    height: auto;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    float: none;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-link {
+    padding: .5rem 0;
+    margin: 0;
+    width: 100%;
+    background-color: #013852;
+    display: none;
+  }
+  .nav-link:last-child {
+    padding: .5rem 0;
+    margin: 0;
+  }
+
+  .small-logo {
+    display: block;
+    position: static;
+    margin: 0 auto;
+    transform: translate(0, 0);
+  }
+
 }
 
 /* BALLOON SECTION */
@@ -376,7 +440,16 @@ h5 {
 .why-content {
   color: white;
   text-align: left;
+  align-self: center;
   text-shadow: 3px 3px 6px #1976D2;
+}
+.last-place-heading {
+  font-size: 7rem;
+}
+@media (min-width: 2000px) {
+  .last-place-heading {
+    font-size: 9rem;
+  }
 }
 @media (max-width: 600px) {
   .why-content {
