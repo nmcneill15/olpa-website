@@ -278,6 +278,7 @@ h5 {
 }
 .tree-image {
   display: block;
+  min-width: 100%;
 }
 .tree-text {
   position: absolute;
