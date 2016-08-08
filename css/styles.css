@@ -142,6 +142,32 @@ h5 {
     font-size: .6rem;
   }
 }
+
+/* LOADER */
+
+.loader {
+  height: 100vh;
+  background: linear-gradient(180deg, #1976D2, #64B5F6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+.balloon-small {
+  animation-name: load-balloon;
+  animation-duration: 2s;
+  position: absolute;
+  top: 2000px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@keyframes load-balloon {
+  from { top: 2000px; }
+  to { top: -300px; }
+}
+
 /* HEADER */
 
 .header {
@@ -152,7 +178,7 @@ h5 {
   align-items: center;
   justify-content: center;
   width: 100%;
-  z-index: 99;
+  z-index: 98;
 }
 .nav {
   display: flex;
@@ -195,7 +221,7 @@ h5 {
   align-items: center;
   justify-content: center;
   animation-name: balloon-rise;
-  animation-duration: 3s;
+  animation-duration: 5s;
   position: relative;
   text-align: center;
   color: white;
@@ -206,8 +232,9 @@ h5 {
   }
 }
 @keyframes balloon-rise {
-  from { top: 200px; }
-  to { top: 0; }
+  0% { top: 200px; }
+  40% { top: 200px; }
+  100% { top: 0; }
 }
 
 .balloon-img {
@@ -457,7 +484,8 @@ h5 {
 .footer {
   padding: 4rem 0;
   margin: 0;
-  background-color: rgba(1,56,82, 1);  color: white;
+  background-color: rgba(1,56,82, 1);
+  color: white;
   text-align: center;
 }
 .footer-content {
