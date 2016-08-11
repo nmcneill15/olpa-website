@@ -87,7 +87,7 @@ body {
 }
 
 .small-logo {
-  height: 60px;
+  height: 80px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -192,7 +192,7 @@ h5 {
 
 .header {
   height: 70px;
-  background-color: rgba(1,56,82, .1);
+  /*background-color: rgba(1,56,82, .1);*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -363,7 +363,7 @@ h5 {
 .digging-deep {
   font-weight: 700;
   top: 80%;
-  color: #66A031;
+  color: white;
   font-family: "Zeyada", cursive;
   text-shadow: 6px 6px 8px #3E1F10;
 }
@@ -444,7 +444,7 @@ h5 {
   text-shadow: 3px 3px 6px #1976D2;
 }
 .last-place-heading {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 @media (min-width: 2000px) {
   .last-place-heading {
