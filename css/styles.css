@@ -719,6 +719,8 @@ h5 {
   top: 0;
   width: 100%;
   left: 0;
+  margin-top: 10rem;
+  opacity: 0;
 }
 
 
