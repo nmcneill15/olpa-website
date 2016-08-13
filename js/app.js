@@ -3,6 +3,10 @@ $(function() {
   var menuShowing = false;
   var bridgeBalloonIn = false;
 
+  $(window).on("resize", function() {
+    console.log("width: " + $(window).width() + " height: " + $(window).height());
+  });
+
   function load() {
     $(".load-clouds").fadeIn();
     setTimeout(showPage, 1500);
