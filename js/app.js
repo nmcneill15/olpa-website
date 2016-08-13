@@ -31,7 +31,9 @@ $(function() {
 
 
   $(window).on("scroll", function() {
-    var winTop = $(window).scrollTop();
+    var viewportWidth = $(window).width();
+    var standard = 1024 / viewportWidth;
+    var winTop = $(window).scrollTop() + (Math.floor(standard) * 200);
     var trigger = $("#bridge-content").offset().top;
     if (winTop > trigger && !bridgeBalloonIn) {
       showBalloon();
