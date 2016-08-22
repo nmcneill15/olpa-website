@@ -921,7 +921,7 @@ p {
 
 
 .faqs-hero {
-  background-image: url("../../img/bridge-background.png");
+  background-image: url("../img/bridge-background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% -13%;
@@ -967,7 +967,7 @@ p {
 
 .about-hero {
   color: #F27523;
-  background-image: url("../../img/ms-balloon-background.png");
+  background-image: url("../img/ms-balloon-background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -1014,7 +1014,7 @@ p {
 /* RESEARCH PAGE */
 
 .research-hero {
-  background-image: url("../../img/tree.png");
+  background-image: url("../img/tree.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
