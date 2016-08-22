@@ -904,18 +904,21 @@ p {
 }
 
 .pages-nav {
-  color: #212121;
+  color: #022B44;
 }
 
 .pages-hero {
   text-align: center;
-  height: 20rem;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.pages-menu {
+  color: #022B44;
+}
 /* FAQ PAGE */
 
 
@@ -924,8 +927,38 @@ p {
   background-image: url("../img/bridge-background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0% -13%;
+  background-position: 0% -18%;
   color: white;
+}
+@media (max-width: 800px) {
+  .faqs-hero {
+    background-position: center;
+  }
+}
+@media (min-width: 1366px) {
+  .faqs-hero {
+    background-position: 0% -15%;
+  }
+}
+@media (min-width: 1700px) {
+  .faqs-hero {
+    background-position: 0% -8%;
+  }
+}
+@media (min-width: 1920px) {
+  .faqs-hero {
+    background-position: 0% -5%;
+  }
+}
+@media (min-width: 2300px) {
+  .faqs-hero {
+    background-position: 0% 0%;
+  }
+}
+@media (min-width: 2700px) {
+  .faqs-hero {
+    background-position: 0% 5%;
+  }
 }
 
 .faqs-section {
@@ -937,7 +970,7 @@ p {
 
 .faqs-content {
   margin: 0 auto;
-  padding: 3rem 3rem;
+  padding: 3rem 1rem;
   max-width: 800px;
 }
 .faqs-content h5 {
@@ -966,7 +999,7 @@ p {
 
 
 .about-hero {
-  color: #F27523;
+  color: #022B44;
   background-image: url("../img/ms-balloon-background.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -982,7 +1015,7 @@ p {
 
 .about-content {
   margin: 0 auto;
-  padding: 3rem 3rem;
+  padding: 3rem 1rem;
   max-width: 800px;
   min-height: 90vh;
 }
@@ -1028,7 +1061,7 @@ p {
 }
 .research-content {
   margin: 0 auto;
-  padding: 3rem 3rem;
+  padding: 3rem 1rem;
   max-width: 800px;
   min-height: 90vh;
 }
