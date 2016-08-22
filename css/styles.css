@@ -1,4 +1,4 @@
-/* Colors: Navy: #013852 or #022B44, Orange: #F27523....Font: Roboto 500, 400, 300 */
+/* Colors: Navy: #013852 or #022B44, Orange: #F27523.... */
 
 /* GENERAL */
 html, body {
@@ -107,6 +107,11 @@ body {
     width: 95%;
   }
 }
+@media (min-width: 1366px) {
+  .large-logo {
+    height: 22rem;
+  }
+}
 .center-dark {
   text-align: center;
   color: #013852;
@@ -136,7 +141,10 @@ h5 {
   font-size: 1rem;
 }
 p {
-  font-size: .9rem;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+
 }
 
 @media (max-width: 1024px) {
@@ -503,7 +511,7 @@ p {
 
 .three-points {
   width: 100%;
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 .hr {
   border: 1px solid lightgrey;
@@ -708,6 +716,7 @@ p {
   }
 }
 
+
 .no-bridge {
   display: block;
   width: 100%;
@@ -762,11 +771,10 @@ p {
   letter-spacing: .8rem;
 }
 .real-solutions-content p {
-  letter-spacing: .2rem;
   width: 95%;
   margin: 1rem auto;
   font-size: 1.2rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-align: center;
 }
 
@@ -889,23 +897,47 @@ p {
   padding: 0 1rem;
 }
 
+/* SECONDARY PAGES */
+
+.pages-header {
+  background-color: white;
+}
+
+.pages-nav {
+  color: #212121;
+}
+
+.pages-hero {
+  text-align: center;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* FAQ PAGE */
 
-.faqs-section {
+
+
+.faqs-hero {
+  background-image: url("../../img/bridge-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% -13%;
   color: white;
-  width: 90%;
+}
+
+.faqs-section {
+  color: #212121;
   margin: 0 auto;
-  max-width: 1366px;
+  background-color: white;
 }
-.faqs-section h4 {
-  padding: 2rem 0;
-  text-align: center;
-  font-weight: bold;
-}
+
 
 .faqs-content {
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 3rem;
   max-width: 800px;
 }
 .faqs-content h5 {
@@ -913,7 +945,6 @@ p {
 }
 .faqs-content p {
   padding: 1rem 0;
-  letter-spacing: .1rem;
   line-height: 1.2rem;
 }
 .faqs-content span {
@@ -932,20 +963,26 @@ p {
 
 /* ABOUT PAGE */
 
+
+
+.about-hero {
+  color: #F27523;
+  background-image: url("../../img/ms-balloon-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 .about-section {
-  color: white;
-  width: 90%;
+  color: #212121;
+  width: 100%;
   margin: 0 auto;
-  max-width: 1366px;
+  background-color: white;
 }
-.about-section h4 {
-  padding: 2rem 0;
-  text-align: center;
-  font-weight: bold;
-}
+
 .about-content {
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 3rem;
   max-width: 800px;
   min-height: 90vh;
 }
@@ -954,11 +991,20 @@ p {
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: .2rem;
+  color: #F27523;
 }
 .about-content p {
   padding: 1rem 0;
-  letter-spacing: .1rem;
   line-height: 1.2rem;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+.about-content ul {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  list-style-position: inside;
+  padding: 0 1rem;
 }
 .vision-mission {
   padding: 2rem 0;
@@ -967,20 +1013,22 @@ p {
 
 /* RESEARCH PAGE */
 
-.research-section {
+.research-hero {
+  background-image: url("../../img/tree.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
   color: white;
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1366px;
+  text-shadow: 6px 6px 8px #3E1F10;
 }
-.research-section h4 {
-  padding: 2rem 0;
-  text-align: center;
-  font-weight: bold;
+
+.research-section {
+  color: #212121;
+  background-color: white;
 }
 .research-content {
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 3rem;
   max-width: 800px;
   min-height: 90vh;
 }
@@ -992,14 +1040,19 @@ p {
 }
 .research-content p {
   padding: 1rem 0;
-  letter-spacing: .1rem;
   line-height: 1.2rem;
+}
+.research-content a {
+  text-decoration: none;
 }
 .report {
   padding: 2rem 0;
 }
 .pdf-icon {
-  color: white;
+  color: #212121;
+}
+.pdf-icon i {
+  color: #F27523;
 }
 .pdf-icon:hover {
   cursor: pointer;
