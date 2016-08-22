@@ -906,6 +906,11 @@ p {
 .pages-nav {
   color: #022B44;
 }
+@media (max-width: 800px) {
+  .pages-nav {
+    color: white;
+  }
+}
 
 .pages-hero {
   text-align: center;
