@@ -985,6 +985,7 @@ hr {
   margin: 0 auto;
   padding: 3rem 1rem;
   max-width: 800px;
+  font-family: "Lato", sans-serif;
 }
 .faqs-content h5 {
   padding: 1rem 0;
