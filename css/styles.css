@@ -853,6 +853,7 @@ p {
 .CTA-button:hover {
   box-shadow: 0 4px 6px #1976D2;
   cursor: pointer;
+  background-color: #E65100;
 }
 .CTA-link {
   text-decoration: none;
@@ -924,6 +925,13 @@ p {
 .pages-menu {
   color: #022B44;
 }
+
+hr {
+  width: 99%;
+  height: 1px;
+  border: none;
+  background-color: lightblue;
+}
 /* FAQ PAGE */
 
 
@@ -980,6 +988,8 @@ p {
 }
 .faqs-content h5 {
   padding: 1rem 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 .faqs-content p {
   padding: 1rem 0;
@@ -988,15 +998,21 @@ p {
 .faqs-content span {
   text-transform: uppercase;
   color: #F27523;
+  font-weight: 400;
 }
-.faqs-content hr {
-  width: 95%;
-  height: 1px;
-  border: none;
-  background-color: lightblue;
-}
+
 .qa {
   padding: 2rem 0;
+}
+.qa ul, .qa ol {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  padding: 0 1rem 0 2rem;
+
+}
+.qa li {
+  list-style-position: outside;
+  padding: 0 0 .3rem 0;
 }
 
 /* ABOUT PAGE */
