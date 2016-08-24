@@ -95,7 +95,10 @@ body {
 }
 @media (max-width: 800px) {
   .small-logo {
-    padding: 1.3rem 0;
+    padding: 1rem 0;
+    position: static;
+    top: 0;
+    transform: translateY(0);
   }
 }
 .large-logo {
@@ -104,7 +107,7 @@ body {
 @media (max-width: 800px) {
   .large-logo {
     height: auto;
-    width: 95%;
+    width: 70%;
   }
 }
 @media (min-width: 1366px) {
@@ -315,10 +318,11 @@ p {
 
 .menu {
   position: absolute;
-  top: .8rem;
-  right: .8rem;
+  top: 0;
+  right: 0;
   color: white;
   display: none;
+  padding: 1rem;
 }
 .menu:hover {
   color: #F27523;
@@ -352,11 +356,11 @@ p {
     padding: .5rem 0;
     margin: 0;
   }
-  .small-logo {
-    display: block;
-    position: static;
-    margin: 0 auto;
-    transform: translate(0, 0);
+  .logo-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 480px) {
@@ -510,30 +514,33 @@ p {
 }
 
 .three-points {
-  width: 100%;
+  width: 90%;
   padding-top: 6rem;
+}
+.three-points h2 {
+  font-weight: bold;
 }
 .hr {
   border: 1px solid lightgrey;
 }
-.hard-data h3 {
+.hard-data h4 {
   letter-spacing: 2.2rem;
 }
 
-.real-solutions h1 {
+.real-solutions h2 {
   letter-spacing: .5rem;
 }
-.real-solutions h3:first-child {
+.real-solutions h4:first-child {
   letter-spacing: .5rem;
 }
 .last-letter {
   letter-spacing: normal;
 }
 @media (max-width: 800px) {
-  .real-solutions h3, .real-solutions h1, .real-solutions h3:first-child, .last-letter {
+  .real-solutions h4, .real-solutions h2, .real-solutions h4:first-child, .last-letter {
     letter-spacing: normal;
   }
-  .hard-data h3 {
+  .hard-data h4 {
     letter-spacing: 1.2rem;
   }
 }
@@ -559,27 +566,24 @@ p {
   align-self: center;
   text-shadow: 3px 3px 6px #1976D2;
 }
+.why-content h2 {
+  font-weight: bold;
+  letter-spacing: .3rem;
+}
 .why-content h4 {
-  letter-spacing: 1rem;
+  letter-spacing: .5rem;
   color: #013852;
 }
-@media (max-width: 1024px) {
-  .why-content h4 {
-    letter-spacing: .7rem;
-  }
-}
+
 @media (max-width: 600px) {
   .why-content {
     width: 95%;
     margin: 0 auto;
   }
-  .why-content h4 {
-    letter-spacing: .5rem;
-  }
 }
 @media (max-width: 480px) {
   .why-content h4 {
-    letter-spacing: .3rem;
+    letter-spacing: .2rem;
   }
 }
 
@@ -590,7 +594,7 @@ p {
 }
 .chart {
   box-shadow: 3px 3px 6px #1976D2;
-  width: 100%;
+  width: 90%;
   border-radius: 12px;
 }
 @media (max-width: 800px) {
@@ -627,14 +631,11 @@ p {
 }
 .bridge-content h2 {
   font-weight: bold;
-  font-size: 2.9rem;
 }
 
 
 @media (max-width: 1024px) {
-  .bridge-content h2 {
-    font-size: 2.3rem;
-  }
+
   .bridge-content h4:first-of-type {
     letter-spacing: .3rem;
   }
@@ -643,9 +644,7 @@ p {
   }
 }
 @media (max-width: 800px) {
-  .bridge-content h2 {
-    font-size: 1.9rem;
-  }
+
   .bridge-content h4:first-of-type {
     letter-spacing: .3rem;
   }
@@ -654,9 +653,6 @@ p {
   }
 }
 @media (max-width: 480px) {
-  .bridge-content h2 {
-    font-size: 1.2rem;
-  }
   .bridge-content h4:first-of-type {
     letter-spacing: .18rem;
   }
@@ -665,9 +661,7 @@ p {
   }
 }
 @media (min-width: 1366px) {
-  .bridge-content h2 {
-    font-size: 3.9rem;
-  }
+
   .bridge-content h4 {
     font-size: 2.9rem;
   }
@@ -676,9 +670,7 @@ p {
   }
 }
 @media (min-width: 1920px) {
-  .bridge-content h2 {
-    font-size: 5rem;
-  }
+
   .bridge-content h4 {
     font-size: 4rem;
   }
@@ -921,6 +913,11 @@ p {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .pages-hero {
+    height: 10rem;
+  }
+}
 
 .pages-menu {
   color: #022B44;
@@ -945,7 +942,7 @@ hr {
 }
 @media (max-width: 800px) {
   .faqs-hero {
-    background-position: center;
+    background-position: top;
   }
 }
 @media (min-width: 1366px) {
